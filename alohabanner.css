@@ -1,0 +1,40 @@
+.tbcontainer {
+  margin-top: -50px;
+}
+
+.topbanner {
+  display: flex;
+  flex-flow: column;
+  margin-top: +100px;
+  background-image: url(images/flower-bkgd.jpg);
+  height: 600px;
+  width: auto;
+
+}
+
+.lady {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.bannertxt {
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-size: 24px;
+  */
+}
+
+.centered {
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ;
