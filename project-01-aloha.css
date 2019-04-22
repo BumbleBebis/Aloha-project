@@ -1,4 +1,3 @@
-/*FONTS*/
 @font-face {
   font-family: 'Raleway';
   src: url('fonts/Raleway-Medium.eot');
@@ -100,10 +99,6 @@ html {
   min-width: 750px;
 }
 
-/*END OF FONTS*/
-
-/*Navigation*/
-
 .navcontainer {
   padding-left: 20px;
   position: fixed;
@@ -150,8 +145,6 @@ li {
   vertical-align: text-top;
 }
 
-/*TOP BANNER*/
-
 .topbanner {
   display: flex;
   flex-flow: column-reverse;
@@ -187,20 +180,12 @@ li {
   text-shadow: 2px 2px 4px #666666;
 }
 
-/*END TOP BANNER*/
-
-/*Handcrafted Styles*/
-
 .handcraftedstyles {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-
-/*END OF STYLES*/
-
-/*Categories*/
 
 .topcatbox {
   display: flex;
@@ -260,9 +245,6 @@ li {
   text-shadow: 2px 2px 4px #666666;
 }
 
-/*END OF CATEGORIES*/
-
-/*Most Loved Items*/
 .lovedbox {
   padding-right: 5%;
   padding-left: 5%;
@@ -277,13 +259,13 @@ li {
   flex-wrap: nowrap;
 }
 
-.item13 img {
+.product img {
   display: flex;
   max-width: auto;
   max-height: 300px;
 }
 
-.item13 {
+.product {
   display: flex;
   flex-flow: column;
   flex-basis: auto;
@@ -305,12 +287,6 @@ li {
   background-color: black;
   width: 100px;
 }
-
-/*END OF Most Loved*/
-
-
-
-/*Start of waves flexbox*/
 
 .wavebox {
   margin-top: 20px;
@@ -357,11 +333,6 @@ button {
   font-weight: bold;
 }
 
-/*END OF waves flexbox*/
-
-/*Start of Footer*/
-/*footer*/
-
 .footercontainer {
   margin-top: 20px;
 }
@@ -404,8 +375,6 @@ button {
 .address .white {
   color: white;
 }
-
-/*TEXT EDITING*/
 
 body {
   color: #2d2d2d;

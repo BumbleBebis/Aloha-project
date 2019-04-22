@@ -5,15 +5,13 @@
 <head>
   <meta charset="utf8" />
   <meta name="description" content="aloha apparel co">
+  <script src="project-01-aloha.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="project-01-aloha.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Aloha apparel co.</title>
 </head>
-<!--END OF Head-->
-
-<!--Navigation Bar = FINISHED-->
 
 <body id="maincontainer">
   <section class="navcontainer"></section>
@@ -40,9 +38,7 @@
     </ul>
   </section>
   </section>
-  <!--END OF Navigation Bar-->
 
-  <!--Top Banner = FINISHED-->
   <section class="tbcontainer">
     <div class="topbanner">
       <a name="about"></a>
@@ -56,18 +52,14 @@
       <img class="lady" src="images/banner-girl.png" alt="girl">
     </div>
   </section>
-  <!--END OF Top Banner-->
 
-  <!--Hand-Crafted Styles = FINISHED-->
   <section class="handcraftedstyles">
     <h1><span class="italic">Hand-Crafted</span><span class="bold"> Styles</span></h1>
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br> current selection of products
       or
       sign-up for updates below.</p>
   </section>
-  <!--END OF Hand-Crafted Styles-->
 
-  <!--Category Section = Finnished-->
   <section class="category">
     <a class="topcatbox" name="shop">
       <div class="categoryimage"><img src="images/mens-category.jpg" alt="men's category">
@@ -93,56 +85,54 @@
     </div>
   </section>
   </section>
-  <!--END OF Category Section-->
 
-  <!--Most Love Section - Finished-->
   <section class="mostloved">
     <a class="mostlovedproducts" name="features">
       <h1><span class="italic">Most-Loved</span> Products</h1>
       <div class="lovedcontainer">
-        <div class="item13"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+        <div class="product"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
           <h4>dresses</h4><br>
           <h3>Checked Stretch Dress</h3>
           <h4>$129.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+        <div class="product"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
           <h4>bags</h4><br>
           <h3>Blue Hipster Backpack</h3>
           <h4>$69.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/demin-overall-shorts.jpg" alt="denim overall short">
+        <div class="product"><img src="images/demin-overall-shorts.jpg" alt="denim overall short">
           <h4>denim</h4><br>
           <h3>Denim Overall Shorts</h3>
           <h4>$89.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+        <div class="product"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
           <h4>dresses</h4><br>
           <h3>Pink Dotted Dress</h3>
           <h4>$99.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+        <div class="product"><img src="images/blue-silk-dress.jpg" alt="blue silk dress">
           <h4>dresses</h4><br>
           <h3>Blue Silk Dress</h3>
           <h4>$129.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+        <div class="product"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
           <h4>tshirts</h4><br>
           <h3>Cotton Yellow Tshirt</h3>
           <h4>$39.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+        <div class="product"><img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
           <h4>tshirts</h4><br>
           <h3>Cotton Blue Shirt</h3>
           <h4>$49.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="item13"><img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
+        <div class="product"><img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
           <h4>dresses</h4><br>
           <h3>Stretch Knit Dress</h3>
           <h4>$69.00</h4>
@@ -151,29 +141,24 @@
       </div>
   </section>
   </section>
-  <!--END OF most loved section-->
 
-  <!--wave box-->
   <section class="wavesbox">
     <a name="updates">
-      <section class="waves">
+      <div class="waves">
         <br>
         <h1><span class="italic">Sign-Up for</span> <span class="bold">Updates</span></h1>
         <p>Stay updated on our latest product releases, be the first to find out about <br>
           upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <span>
           <form><input type="email" name="subscribe" placeholder="Your Email" />
-            <button>Subscribe</button></form>
+            <button onclick=process()>Subscribe</button></form>
         </span>
-      </section>
+      </div>
     </a>
   </section>
-  <!--END OF wave box-->
 
-  <!--Start of Footer-->
   <section class="footercontainer">
-    <section class="footer">
-      <!--insert social media links here, footer-->
+    <div class="footer">
       <div class=address>
         <ul><span class="white">&copy; 2016 Aloha Apparel co.</ul></span>
         <ul><span class="white">Powered by HTML and css</ul></span>
@@ -189,9 +174,8 @@
         <a class="fab fa-pinterest fa-lg" href="https://www.pinterest.com/"> Pinterest</a> <br>
         <a class="fab fa-google-plus-g fa-lg" href="https://www.plus.google.com/"> Google+</a> <br>
       </div>
-    </section>
+    </div>
   </section>
-  <!--END OF Footer-->
 
   </div>
 
