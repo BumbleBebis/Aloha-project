@@ -5,9 +5,14 @@
 <head>
   <meta charset="utf8" />
   <meta name="description" content="aloha apparel co">
-  <script src="project-01-aloha.js"></script>
+  <script src="./lib/project-01-aloha.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="project-01-aloha.css">
+  <script src="./lib/jquery-3.4.0.min.js"></script>
+  <script type="text/javascript" src="./lib/jquery-3.4.0.min.js"></script>
+  <script type="text/javascript" src="./lib/project-01-aloha.js"></script>
+  <script src="./lib/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="flickity.css" media="screen">
+  <link rel="stylesheet" href="project-01-aloha.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Aloha apparel co.</title>
@@ -89,50 +94,50 @@
   <section class="mostloved">
     <a class="mostlovedproducts" name="features">
       <h1><span class="italic">Most-Loved</span> Products</h1>
-      <div class="lovedcontainer">
-        <div class="product"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
           <h4>dresses</h4><br>
           <h3>Checked Stretch Dress</h3>
           <h4>$129.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+        <div class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
           <h4>bags</h4><br>
           <h3>Blue Hipster Backpack</h3>
           <h4>$69.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/demin-overall-shorts.jpg" alt="denim overall short">
+        <div class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="denim overall short">
           <h4>denim</h4><br>
           <h3>Denim Overall Shorts</h3>
           <h4>$89.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+        <div class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
           <h4>dresses</h4><br>
           <h3>Pink Dotted Dress</h3>
           <h4>$99.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+        <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="blue silk dress">
           <h4>dresses</h4><br>
           <h3>Blue Silk Dress</h3>
           <h4>$129.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+        <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
           <h4>tshirts</h4><br>
           <h3>Cotton Yellow Tshirt</h3>
           <h4>$39.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+        <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
           <h4>tshirts</h4><br>
           <h3>Cotton Blue Shirt</h3>
           <h4>$49.00</h4>
           <center><button class="shoppingbutton">Add to cart</button></center>
         </div>
-        <div class="product"><img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
+        <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
           <h4>dresses</h4><br>
           <h3>Stretch Knit Dress</h3>
           <h4>$69.00</h4>
@@ -150,17 +155,19 @@
         <p>Stay updated on our latest product releases, be the first to find out about <br>
           upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <span>
-          <form><input type="email" name="subscribe" placeholder="Your Email" />
-            <button onclick=process()>Subscribe</button></form>
+          <form>
+            <input id="email" type="email" name="subscribe" placeholder="Your Email" />
+            <button type="text" name="email" onblur="validateEmail();">Subscribe</button>
+          </form>
         </span>
       </div>
     </a>
   </section>
-
   <section class="footercontainer">
     <div class="footer">
       <div class=address>
-        <ul><span class="white">&copy; 2016 Aloha Apparel co.</ul></span>
+        <ul><span class="white">&copy; 2016 Aloha Apparel co.</ul>
+        </span>
         <ul><span class="white">Powered by HTML and css</ul></span>
         <ul><span class="white">604-604-6040. <u>info@alohaapparel.com</u></ul></span>
         <ul>1490 W Broadway</ul>

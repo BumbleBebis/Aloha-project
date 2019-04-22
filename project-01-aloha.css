@@ -250,34 +250,6 @@ li {
   padding-left: 5%;
 }
 
-.lovedcontainer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  overflow-x: auto;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
-
-.product img {
-  display: flex;
-  max-width: auto;
-  max-height: 300px;
-}
-
-.product {
-  display: flex;
-  flex-flow: column;
-  flex-basis: auto;
-  align-self: center;
-  flex-wrap: nowrap;
-  justify-content: center;
-  line-height: 1px;
-  height: min-content;
-  width: auto;
-  margin-bottom: 20px;
-}
-
 .shoppingbutton {
   border-radius: 25px;
   font-family: Raleway;
@@ -288,8 +260,12 @@ li {
   width: 100px;
 }
 
-.wavebox {
-  margin-top: 20px;
+.carousel-cell {
+  margin-bottom: 20px;
+}
+
+.wavesbox {
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
