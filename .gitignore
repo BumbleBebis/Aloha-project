@@ -2,4 +2,9 @@
 ./fonts
 ./images
 rough-layout.xcf
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_store
+
+>>>>>>> 0c9bc182e1ce42344ae6a34d0d59bb9f808879d8
